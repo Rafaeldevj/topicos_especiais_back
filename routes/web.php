@@ -12,7 +12,7 @@
 */
 
 $router->get('/', function () use ($router) {
-    return $router->app->version();
+    return str_random(32);
 });
 
 $router->group(['prefix' => '/api/usuario'], function () use ($router) {
